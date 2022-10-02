@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  conversaopeso:
+    image: adnsoa/conversao-peso:v1
+    container_name: conversao-peso
+    build: 
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 80:80
